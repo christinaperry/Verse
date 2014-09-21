@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var verseLabel: UILabel!
+    
+    let verseBook = VerseBook()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        verseLabel.text = verseBook.randomVerse()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showVerse() {
+        verseLabel.text = verseBook.randomVerse()
+    }
 
 }
 

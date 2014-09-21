@@ -13,6 +13,7 @@
 		97316F3319CE9C2E00F2799A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97316F3219CE9C2E00F2799A /* Images.xcassets */; };
 		97316F3619CE9C2E00F2799A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97316F3419CE9C2E00F2799A /* LaunchScreen.xib */; };
 		97316F4219CE9C2E00F2799A /* VerseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97316F4119CE9C2E00F2799A /* VerseTests.swift */; };
+		97C0ADAF19CEC64400959C6D /* VerseBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C0ADAE19CEC64400959C6D /* VerseBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,8 @@
 		97316F3B19CE9C2E00F2799A /* VerseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97316F4019CE9C2E00F2799A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97316F4119CE9C2E00F2799A /* VerseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseTests.swift; sourceTree = "<group>"; };
-		97316F4B19CE9FB500F2799A /* scracthpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = scracthpad.playground; sourceTree = "<group>"; };
+		97316F4B19CE9FB500F2799A /* scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = scratchpad.playground; sourceTree = "<group>"; };
+		97C0ADAE19CEC64400959C6D /* VerseBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerseBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		97316F2819CE9C2D00F2799A /* Verse */ = {
 			isa = PBXGroup;
 			children = (
+				97C0ADAE19CEC64400959C6D /* VerseBook.swift */,
 				97316F2B19CE9C2E00F2799A /* AppDelegate.swift */,
 				97316F2D19CE9C2E00F2799A /* ViewController.swift */,
 				97316F2F19CE9C2E00F2799A /* Main.storyboard */,
@@ -117,7 +120,7 @@
 		97316F4C19CE9FE300F2799A /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				97316F4B19CE9FB500F2799A /* scracthpad.playground */,
+				97316F4B19CE9FB500F2799A /* scratchpad.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			files = (
 				97316F2E19CE9C2E00F2799A /* ViewController.swift in Sources */,
 				97316F2C19CE9C2E00F2799A /* AppDelegate.swift in Sources */,
+				97C0ADAF19CEC64400959C6D /* VerseBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +419,7 @@
 				97316F4719CE9C2E00F2799A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97316F4819CE9C2E00F2799A /* Build configuration list for PBXNativeTarget "VerseTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				97316F4A19CE9C2E00F2799A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

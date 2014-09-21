@@ -24,7 +24,10 @@ fruits
 let days = ["sunday", "monday"]
 
 //create optional value
-//optional value contains a value or nil to indicate value is missing, add a question mark after the type to mark variable as optional, to unwrap optional and get to string add a ! at end of var to specify it's an optional
+//optional value contains a value or nil to indicate value is missing. Add a question mark after the type to mark variable as optional. To unwrap and get to string add a ! at end of var to specify it's an optional
 
 var optionalString: String? = "hello"
 optionalString!
+
+//random # generator
+var randomNumber = Int(arc4random_uniform(10))

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,19 +17,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VERSE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvj-Ld-FB4">
-                                <rect key="frame" x="139" y="125" width="55" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvj-Ld-FB4">
+                                <rect key="frame" x="36" y="99" width="248" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="248" id="7gI-a8-RSb"/>
+                                    <constraint firstAttribute="width" constant="248" id="EHw-A8-Wn4"/>
+                                </constraints>
+                                <string key="text">"Christ is often nearer to us than we think he is.”
+– Matthew Henry</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNn-3m-amG">
+                                <rect key="frame" x="102" y="465" width="116" height="42"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.99108492943548387" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="dtr-cs-Xpj"/>
+                                    <constraint firstAttribute="height" constant="42" id="gPk-E1-eVp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" red="0.54895643248175185" green="0.87759466240875916" blue="0.85290260036496346" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next Verse">
+                                    <color key="titleColor" red="0.68285241789999995" green="0.8980392157" blue="0.88537864960000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showVerse" destination="vXZ-lx-hvc" eventType="touchUpInside" id="52U-ns-xXh"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.73782504562043794" green="0.87291856751824815" blue="0.87263343978102192" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.68068544708029199" green="0.87759466240875916" blue="0.85290260036496346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xvj-Ld-FB4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="79" id="7JE-Z1-TQR"/>
+                            <constraint firstItem="xvj-Ld-FB4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="Asj-J4-LIc"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="eNn-3m-amG" secondAttribute="bottom" constant="61" id="hqJ-jC-4n6"/>
+                            <constraint firstItem="eNn-3m-amG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="86" id="p2B-lh-1gh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="verseLabel" destination="xvj-Ld-FB4" id="KoH-gi-j0B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74.666666666666671" y="128.74666666666667"/>
+            <point key="canvasLocation" x="74" y="128"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
