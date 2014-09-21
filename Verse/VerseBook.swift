@@ -11,11 +11,15 @@ import Foundation
 struct VerseBook {
     let versesArray = [
             "Deuteronomy 31:6\nBe strong and courageous. Do not be afraid or terrified because of them, for the Lord your God goes with you; he will never leave you nor forsake you.",
+            "Romans 11:33 NLT\n Oh, how great are God’s riches and wisdom and knowledge! How impossible it is for us to understand his decisions and his ways!",
             "Psalm 118:6\nThe Lord is on my side; I will not fear: what can man do unto me?",
             "Hebrews 10:36\nPatient endurance is what you need now, so that you will continue to do God's will. Then you will receive all that he has promised. ",
             "Romans 15:13\nI pray that God, the source of hope, will fill you completely with joy and peace because you trust in him. Then you will overflow with confident hope through the power of the Holy Spirit.",
             "Romans 8:28\nAnd we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
-            "James 1:2-4\nDear brothers and sisters, when troubles of any kind come your way, consider it an opportunity for great joy. For you know that when your faith is tested, your endurance has a chance to grow. So let it grow, for when your endurance is fully developed, you will be perfect and complete, needing nothing.",
+            "I Timothy 1:7\n For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.",
+            "Zephaniah 3:17 NLT\n For the lord your God is living among you. He is a mighty savior. He will take delight in you with gladness. With his love, he will calm all your fears. He will rejoice over you with joyful songs.",
+            "Proverbs 3:5-8 NLT\n Trust in the lord with all your heart; do not depend on your own understanding. Seek his will in all you do, and he will show you which path to take. Don’t be impressed with your own wisdom. Instead, fear the Lord and turn away from evil. Then you will have healing for your body and strength for your bones.",
+            "Hebrews 10:36 NLT\n Patient endurance is what you need now, so that you will continue to do God’s will. Then you will receive all that he has promised.",
             "Psalm 56:8\nTears are prayers too. They travel to God when we can’t speak.",
             "Proverbs 4:23\nBe very careful about what you think. Your thoughts run your life.",
             "Matt 6.33\nBut seek first his kingdom and his righteousness, and all these things will be given to you as well.",
